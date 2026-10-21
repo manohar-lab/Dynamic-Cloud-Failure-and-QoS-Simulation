@@ -1,6 +1,6 @@
 # Dynamic Cloud Failure Detection and QoS-Aware Service Reselection
 
-> **Major Project Prototype (Phase 1)**  
+> **Major Project Demonstration Prototype**  
 > Inspired by: IEEE ICIMIA-2025 paper — *"A Hybrid Deep Reinforcement and Swarm Optimization Strategy for Intelligent Cloud Service Composition"*
 
 ---
