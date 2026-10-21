@@ -85,7 +85,7 @@ Dynamic-Cloud-Failure-and-QoS-Simulation/
 
 ## 8. Testing Performed & Actual Results
 The complete automated unit test suite was executed via pytest:
-- **Command:** `& "$env:USERPROFILE\anaconda3\python.exe" -m pytest -v`
+- **Commands:** `pytest -v` (under `.venv`) or `& "$env:USERPROFILE\anaconda3\python.exe" -m pytest -v`
 - **Result:** **`21 passed in 0.08s`** (0 failures, 0 errors, 0 skipped).
 - **Test Categories:**
   - Normalization bounds & zero-division guards (4 tests).

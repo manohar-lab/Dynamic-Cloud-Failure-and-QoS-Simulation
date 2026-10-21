@@ -12,6 +12,12 @@ Open Windows PowerShell in the project directory:
 
 ```powershell
 cd "c:\Users\Mahendra\OneDrive\Desktop\Dynamic-Cloud-Failure-and-QoS-Simulation"
+
+# Option A (Using .venv):
+.\.venv\Scripts\Activate.ps1
+streamlit run app.py
+
+# Option B (Using Anaconda directly):
 & "$env:USERPROFILE\anaconda3\python.exe" -m streamlit run app.py
 ```
 
@@ -100,6 +106,10 @@ The dashboard will open automatically in your browser at:
 To prove system correctness and compliance with acceptance criteria:
 
 ```powershell
+# Option A (Using .venv):
+.\.venv\Scripts\pytest.exe -v
+
+# Option B (Using Anaconda directly):
 & "$env:USERPROFILE\anaconda3\python.exe" -m pytest -v
 ```
 

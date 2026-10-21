@@ -80,26 +80,22 @@ Dynamic-Cloud-Failure-and-QoS-Simulation/
 
 Ensure Python 3.10+ is installed on your Windows machine.
 
-### Option A: Using Standard Python / Virtual Environment
-Open Windows PowerShell and navigate to the project directory:
+### Option A: Using the Project Virtual Environment (.venv)
+Open Windows PowerShell in the project directory:
 
 ```powershell
-# Navigate to project directory
 cd "c:\Users\Mahendra\OneDrive\Desktop\Dynamic-Cloud-Failure-and-QoS-Simulation"
 
-# Create a virtual environment
-python -m venv venv
-
 # Activate the virtual environment
-.\venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
-# Install required dependencies
+# (Dependencies are already installed, or update with):
 pip install -r requirements.txt
 ```
 
-### Option B: Using Anaconda / Conda
+### Option B: Using System Anaconda Directly
 ```powershell
-# If using Anaconda3 already installed on your system
+# Direct invocation with Anaconda Python
 & "$env:USERPROFILE\anaconda3\python.exe" -m pip install -r requirements.txt
 ```
 
@@ -110,10 +106,13 @@ pip install -r requirements.txt
 To launch the interactive dashboard locally:
 
 ```powershell
-# If using virtual environment:
+# Option 1: Using activated .venv:
 streamlit run app.py
 
-# Or if using Anaconda environment:
+# Option 2: Direct one-liner via .venv:
+.\.venv\Scripts\streamlit.exe run app.py
+
+# Option 3: Direct one-liner via Anaconda:
 & "$env:USERPROFILE\anaconda3\python.exe" -m streamlit run app.py
 ```
 
@@ -127,10 +126,13 @@ The application will start and open automatically in your default browser at:
 Run the complete automated unit test suite with verbose output:
 
 ```powershell
-# If using virtual environment:
+# Option 1: Using activated .venv:
 pytest -v
 
-# Or if using Anaconda environment:
+# Option 2: Direct one-liner via .venv:
+.\.venv\Scripts\pytest.exe -v
+
+# Option 3: Direct one-liner via Anaconda:
 & "$env:USERPROFILE\anaconda3\python.exe" -m pytest -v
 ```
 
